@@ -13,8 +13,6 @@ public:
     ListNode* middleNode(ListNode* head) {
         ListNode* p = head;
         ListNode* q = head;
-        if(p->next == nullptr) return head;
-
         while(p && p->next) {
             p = p->next->next;
             q = q->next;
